@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>API & Fonctionnement</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+<header>
+    <h1> Comprendre les API</h1>
+    <p>Fonctionnement, exemples, langages et analyse</p>
+</header>
+
+<section>
+    <h2> 1. Comment fonctionne une API ?</h2>
+
+    <p>
+        Une API (Application Programming Interface) permet à deux systèmes de communiquer.
+    </p>
+
+    <div class="card">
+        <strong>Processus :</strong><br><br>
+        1- L’utilisateur fait une action (clic, formulaire...)<br>
+        2- Le frontend envoie une requête HTTP<br>
+        3- L’API traite la demande<br>
+        4- Le serveur renvoie une réponse (souvent en JSON)<br>
+        5- Le frontend affiche les données
+    </div>
+
+    <p><strong>Schéma :</strong></p>
+    <p>Utilisateur → Frontend → API → Serveur → Base de données → Réponse JSON → Interface</p>
+</section>
+
+<section>
+    <h2> 2. Exemples d’API existantes</h2>
+
+    <div class="card">
+        <strong>API météo</strong><br>
+        Donne la météo en temps réel.
+    </div>
+
+    <div class="card">
+        <strong>API paiement (Wave, Orange Money,Moov Money,Mtn Money, PayPal...)</strong><br>
+        Permet d’effectuer des paiements sécurisés.
+    </div>
+
+    <div class="card">
+        <strong>API Google Maps</strong><br>
+        Affiche des cartes interactives.
+    </div>
+
+    <div class="card">
+        <strong>API réseaux sociaux</strong><br>
+        Permet de publier ou récupérer des données.
+    </div>
+</section>
+
+<section>
+    <h2>3. Comment les langages interagissent avec une API ?</h2>
+
+    <div class="card">
+        <strong>JavaScript</strong><br>
+        Utilise <code>fetch()</code> ou <code>axios</code> pour envoyer des requêtes HTTP.
+    </div>
+
+    <div class="card">
+        <strong>Python</strong><br>
+        Utilise la bibliothèque <code>requests</code>.
+    </div>
+
+    <div class="card">
+        <strong>PHP</strong><br>
+        Utilise <code>cURL</code> pour envoyer des requêtes.
+    </div>
+
+    <div class="card">
+        <strong>Java</strong><br>
+        Utilise des bibliothèques comme <code>HttpClient</code>.
+    </div>
+
+    <p>
+        Tous ces langages envoient des requêtes HTTP (GET, POST, PUT, DELETE) et reçoivent des réponses JSON.
+    </p>
+</section>
+
+<section>
+    <h2> 4. Les API les plus utilisées</h2>
+
+    <div class="card">
+        <strong>API REST</strong><br>
+        Basée sur HTTP. Très populaire et simple.
+        <p class="strength">Forces : simple, standard, largement adoptée</p>
+        <p class="weakness">Faiblesses : parfois trop de requêtes</p>
+    </div>
+
+    <div class="card">
+        <strong>GraphQL</strong><br>
+        Permet de demander exactement les données nécessaires.
+        <p class="strength">Forces : flexible, optimise les requêtes</p>
+        <p class="weakness">Faiblesses : plus complexe à mettre en place</p>
+    </div>
+
+    <div class="card">
+        <strong>SOAP</strong><br>
+        API plus ancienne, basée sur XML.
+        <p class="strength">Forces : très sécurisée</p>
+        <p class="weakness">Faiblesses : lourde et complexe</p>
+    </div>
+</section>
+
+<section>
+    <h2> 5. Forces et faiblesses générales des API</h2>
+
+    <div class="card">
+        <p class="strength"> Permettent l’intégration entre systèmes</p>
+        <p class="strength"> Gagnent du temps de développement</p>
+        <p class="strength"> Réutilisation de services existants</p>
+        <p class="weakness"> Dépendance à un service externe</p>
+        <p class="weakness"> Problèmes de sécurité possibles</p>
+        <p class="weakness"> Limites de requêtes (rate limit)</p>
+    </div>
+</section>
+
+<footer>
+    <p> Simplon - API / Nene - 2026</p>
+</footer>
+
+</body>
+</html>
